@@ -1,7 +1,7 @@
 ### Site Pages
-https://yaboi-v3rt3x.github.io/SchoolFlashCards3...ButBetter/games
+https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped/games
 <br>
-https://yaboi-v3rt3x.github.io/SchoolFlashCards3...ButBetter/notice
+https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped/notice
 <br>
 <br>
 ### Built-In Games
