@@ -3362,7 +3362,7 @@ var UnityLoader = UnityLoader || {
             var l = n.getUint32(o, !0);
             o += 4;
             var decoder = new TextDecoder();
-            var u = decoder.decode(r.subarray(o, o + 
+            var u = decoder.decode(r.subarray(o, o + l));
             o += l;
             for (var c = 0, f = u.indexOf("/", c) + 1; f > 0; c = f,
             f = u.indexOf("/", c) + 1)
