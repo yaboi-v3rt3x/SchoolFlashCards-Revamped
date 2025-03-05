@@ -68,7 +68,10 @@
 				left: 0px;
 				border-bottom: 5px solid black;
 				text-align: center;
-				text-size: 25px;
+				font-size: 20px;
+                font-family: 'Arial';
+				font-weight: bold;
+                border-right: 0px;
 			}
 			.game-box {
 				width: 178.1px;
@@ -184,11 +187,11 @@
 			</div>
 		</div>
 
-		<button class="notice-banner" onclick="location.href='notice'">
-			<h>Due to School Rules, we've had to remove CSGO Clicker. It will be rebranded to Pencil Clicker!</h>
+		<button id="notice-banner" class="notice-banner" onclick="location.href='notice'" style="display: none;"> <!-- Set the display to "none" to hide the banner, and "block" to show the banner! -->
+			<h>Due to School Rules, we've had to remove CS:GO Clicker. It will be rebranded to Pencil Clicker!</h>
 		</button>
 
-		<div style="padding-top: 100px; display: table; width: 100%; height: auto;">
+		<div id="game-list" style="display: table; width: 100%; height: auto;">
 			<button class="game-box" onclick="location.href='games/cookie-clicker'">
 				<div class="game-name-align">
 					<h2 class="game-name">Cookie Clicker</h2>
@@ -215,7 +218,7 @@
 			</button>
 			<button class="game-box" onclick="location.href='games'">
 				<div class="game-name-align">
-					<h2 class="game-name">CS:GO Clicker</h2>
+					<h2 class="game-name"><del>CS:GO Clicker</del></h2>
 				</div>
 				<img class="game-icon" src="icons/game-not-available.png"></img>
 			</button>
@@ -319,4 +322,17 @@
 			</div>
 		</div>
 	</body>
+
+        <script>
+            window.onload = function() {
+                var noticebanner = document.getElementById("notice-banner");
+                var gamelist = document.getElementById("game-list");
+
+                if (noticebanner.style.display === "block") {
+                    gamelist.style.paddingTop = "155px";
+                } else {
+                    gamelist.style.paddingTop = "100px";
+                }
+            }
+        </script>
 </html>
