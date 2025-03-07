@@ -60,16 +60,79 @@
 				vertical-align: middle;
 			}
 			.header {
-				color: red; 
 				font-family: 'Arial'; 
 				font-size: 50px;
 				text-align: center;
-				margin-top: 100px;
+				margin-top: 115px;
+                		width: 99.5%;
+				height: 60px;
+				background: #1E90FF;
+				border-radius: 15px;
+				border: 5px solid black;
+				vertical-align: middle;
 			}
-			.reason {
-				font-family: 'Arial'; 
-				font-size: 25px;
+			.content {
+				margin: 5px;
+				font-family: 'Arial';
+				font-weight: bold;
+				display: flex;
+				margin-top: 25px;
+			}
+			.about {
+				width: 48%;
+				height: 500px;
+				background: #1E90FF;
+				border-radius: 15px;
+				border: 5px solid black;
+				padding-left: 10px;
+				padding-right: 10px;
 				text-align: center;
+			}
+			.updates {
+				width: 48%;
+				height: 500px;
+				background: #1E90FF;
+				border-radius: 15px;
+				border: 5px solid black;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: center;
+				margin-left: auto;
+			}
+			.line {
+				width: 100%;
+				height: 5px;
+				background: #000000;
+				border-radius: 15px;
+			}
+			.thick-line {
+				width: 100%;
+				height: 10px;
+				background: #000000;
+				border-radius: 15px;
+			}
+			.list-entry {
+				display: flex;
+			}
+			.update-date {
+				width: 30%;
+			}
+			.update {
+				width: 65%;
+			}
+			.play-now-button {
+				width: 99.5%;
+				height: 60px;
+				background: #1E90FF;
+				border-radius: 15px;
+				border-width: 5px;
+				font-weight: bold;
+				font-size: 35px;
+				position: absolute;
+  				top: 85%;
+  				left: 50%;
+  				-ms-transform: translate(-50%, -50%);
+  				transform: translate(-50%, -50%);
 			}
 			.bottombar {
 				background: #1E90FF;
@@ -108,13 +171,29 @@
 		</div>
 
 		<h1 class="header">Welcome to School Flash Cards!</h1>
-		<h2 class="reason">
-			Due to School Rules, guns are not allowed, therefore CS:GO Clicker will be rebranded to Pencil Clicker!
-			<br>
-			(Guns you have will be saved as Pencils and will be worth the same amount of money)
-			<br>
-			There is currently no ETA for when it will be done, but keep checking!
-		</h2>
+
+		<div class="content">
+			<div class="about">
+				<h1 style="font-size: 50px; text-align: center;">About School Flash Cards</h1>
+				<div class="thick-line"></div>
+				<h1>
+					School Flash Cards is a unblocked games website for playing games at school. 
+					It offers a variety of unblocked games for everyone to enjoy during they're time at school.
+				</h1>
+			</div>
+	
+			<div class="updates">
+				<h1 style="font-size: 50px; text-align: center;">Site Updates</h1>
+				<div class="thick-line">
+					<div class="list-entry">
+						<h1 class="update-date">[03/06/2025]</h1>
+						<h1 class="update">Created Home Page</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="play-now-button" onclick="location.href='games'">Play Now!</button>
 
 		<div class="bottombar">
 			<h1 style="text-align: center;">jaysoninthesubway & EKFun are affiliates of School Flash Cards™</h1>
