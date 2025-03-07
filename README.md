@@ -1,4 +1,6 @@
 ### Site Pages
+https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped/
+<br>
 https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped/games
 <br>
 https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped/notice
