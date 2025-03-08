@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Flash Cards | Solar System Facts</title>
+    <meta name="viewport" content="width=1500, initial-scale=5">
+    <link rel="shortcut icon" href="logo.png" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .text-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+            position: relative;
+        }
+        .orbit {
+            position: absolute;
+            border-radius: 50%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .planet {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer; 
+        }
+        .planet-mercury {
+            background-color: #7F7F7F; 
+        }
+        .planet-venus {
+            background-color: #FFA500; 
+        }
+        .planet-earth {
+            background-color: #0000FF; 
+        }
+        .planet-mars {
+            background-color: #FF4500; 
+        }
+        .planet-jupiter {
+            background-color: #D2B48C; 
+        }
+        .planet-saturn {
+            background-color: #FFD700; 
+        }
+        .planet-uranus {
+            background-color: #00FFFF; 
+        }
+        .planet-neptune {
+            background-color: #000080;
+        }
+        .orbit-mercury {
+            width: 150px;
+            height: 150px;
+            animation-name: orbit;
+            animation-duration: 30s;
+            z-index: 9;
+        }
+        .orbit-venus {
+            width: 270px;
+            height: 270px;
+            animation-name: orbit-venus;
+            animation-duration: 19s;
+            z-index: 8;
+        }
+        .orbit-earth {
+            width: 400px;
+            height: 400px;
+            animation-name: orbit-earth;
+            animation-duration: 30s;
+            z-index: 7;
+        }
+        .orbit-mars {
+            width: 530px;
+            height: 530px;
+            animation-name: orbit-mars;
+            animation-duration: 40s;
+            z-index: 6;
+        }
+        .orbit-jupiter {
+            width: 700px;
+            height: 700px;
+            animation-name: orbit-jupiter;
+            animation-duration: 50s;
+            z-index: 5;
+        }
+        .orbit-saturn {
+            width: 850px;
+            height: 850px;
+            animation-name: orbit-saturn;
+            animation-duration: 60s;
+            z-index: 4;
+        }
+        .orbit-uranus {
+            width: 1000px;
+            height: 1000px;
+            animation-name: orbit-uranus;
+            animation-duration: 70s;
+            z-index: 3;
+        }
+        .orbit-neptune {
+            width: 1150px;
+            height: 1150px;
+            animation-name: orbit-neptune;
+            animation-duration: 80s;
+            z-index: 2;
+        }
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-venus {
+            from { transform: rotate(-30deg); }
+            to { transform: rotate(330deg); }
+        }
+        @keyframes orbit-earth {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-mars {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-jupiter {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-saturn {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-uranus {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes orbit-neptune {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">Click on the planets to learn more about them!</div>
+    <div class="animation-container">
+
+        <div class="sun" id="sun"></div>
+
+        <div class="orbit orbit-mercury">
+            <div class="planet planet-mercury" id="mercury"></div>
+        </div>
+
+        <div class="orbit orbit-venus">
+            <div class="planet planet-venus" id="venus"></div>
+        </div>
+
+        <div class="orbit orbit-earth">
+            <div class="planet planet-earth" id="earth"></div>
+        </div>
+
+        <div class="orbit orbit-mars">
+            <div class="planet planet-mars" id="mars"></div>
+        </div>
+
+        <div class="orbit orbit-jupiter">
+            <div class="planet planet-jupiter" id="jupiter"></div>
+        </div>
+
+        <div class="orbit orbit-saturn">
+            <div class="planet planet-saturn" id="saturn"></div>
+        </div>
+
+        <div class="orbit orbit-uranus">
+            <div class="planet planet-uranus" id="uranus"></div>
+        </div>
+
+        <div class="orbit orbit-neptune">
+            <div class="planet planet-neptune" id="neptune"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('sun').addEventListener('click', function() {
+            alert("The sun is the ultimate powerhouse of our solar system! It’s a massive, glowing ball of gas that’s been burning for over 4.6 billion years. Did you know it’s so huge that 1.3 million Earths could fit inside it? Without the sun’s heat and light, life on Earth wouldn’t exist—so let’s give it some credit!");
+        });
+
+        document.getElementById('mercury').addEventListener('click', function() {
+            alert("Meet Mercury, the speed demon of the solar system! It’s the closest planet to the sun, but don’t let that fool you—it’s not the hottest (that’s Venus’s job). Mercury zips around the sun in just 88 Earth days, but a single day on Mercury lasts 59 Earth days. Imagine having a birthday every 3 months but waiting 2 months for the sun to rise!");
+        });
+
+        document.getElementById('venus').addEventListener('click', function() {
+            alert("This is Venus. Venus is the hottest planet in our solar system, even though it's not the closest to the sun! Its thick atmosphere traps heat, creating a runaway greenhouse effect. A day on Venus is longer than its year—it takes 243 Earth days to rotate once, but only 225 Earth days to orbit the sun!");
+        });
+
+        document.getElementById('earth').addEventListener('click', function() {
+            alert("Welcome to Earth, the only planet known to support life! It’s home to millions of species, including us. Earth has a unique atmosphere with just the right mix of oxygen, nitrogen, and other gases to make life possible. Fun fact: 71% of Earth’s surface is covered in water, earning it the nickname 'the Blue Planet.'");
+        });
+
+        document.getElementById('mars').addEventListener('click', function() {
+            alert("Mars, the Red Planet, is a dusty, cold desert world with a very thin atmosphere. It’s home to the tallest volcano in the solar system, Olympus Mons, and a canyon system, Valles Marineris, that dwarfs the Grand Canyon. Scientists believe Mars once had liquid water, and it’s a prime candidate for future human exploration!");
+        });
+
+        document.getElementById('jupiter').addEventListener('click', function() {
+            alert("Jupiter is the king of the planets! It’s the largest planet in our solar system, with a diameter of 86,881 miles. Jupiter’s Great Red Spot is a massive storm that’s been raging for centuries. It has 79 known moons, including Ganymede, the largest moon in the solar system—even bigger than Mercury!");
+        });
+
+        document.getElementById('saturn').addEventListener('click', function() {
+            alert("Saturn is famous for its stunning rings, made up of ice and rock particles. It’s the second-largest planet in the solar system and has 83 confirmed moons. Saturn is so light that it could float in water—if you could find a bathtub big enough!");
+        });
+
+        document.getElementById('uranus').addEventListener('click', function() {
+            alert("Uranus is an ice giant with a unique feature: it rotates on its side! This gives it extreme seasons, with each pole getting about 42 years of continuous sunlight followed by 42 years of darkness. Uranus has 27 known moons and a faint ring system.");
+        });
+
+        document.getElementById('neptune').addEventListener('click', function() {
+            alert("Neptune, the farthest planet from the sun, is a windy, icy world with supersonic wind speeds reaching up to 1,500 mph. It’s known for its deep blue color, caused by methane in its atmosphere. Neptune has 14 known moons and a faint ring system.");
+        });
+    </script>
+</body>
+</html>
