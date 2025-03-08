@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>School Flash Cards | Games</title>
+		<link rel="icon" type="image/x-icon" href="icons/logo.png">
+		<style>
+			html::-webkit-scrollbar {
+  				display: none;
+			}
+			html {
+				-ms-overflow-style: none;
+ 				scrollbar-width: none;
+			}
+			.topbar {
+				background: #1E90FF;
+				width: 100%;
+				height: 75px;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				border-bottom: 5px solid black;
+			}
+			.title {
+				height: 75px;
+				font-size: 37.5px;
+				font-family: 'Arial';
+				font-weight: bold;
+				border-width: 0px;
+				vertical-align: middle;
+				margin-top: 6px;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				outline: none;
+			}
+			.socials-text {
+				font-size: 37.5px;
+				font-family: 'Arial';
+				font-weight: bold;
+				align-self: right;
+				text-align: right;
+				vertical-align: middle;
+			}
+			.socials {
+				width: 99%;
+				height: 75px;
+				font-size: 37.5px;
+				font-family: 'Arial';
+				align-self: right;
+				text-align: right;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				padding-top: 12.50px;
+				font-weight: bold;
+			}
+			.social-button {
+				border-radius: 15px;
+				width: 225px;
+				height: 50px;
+				font-size: 50%;
+				font-family: 'Arial';
+				font-weight: bold;
+				border-width: 5px;
+				vertical-align: middle;
+			}
+			.social-icon {
+				width: 35px;
+				height: 35px;
+				vertical-align: middle;
+			}
+			.game-box {
+				width: 178.1px;
+				height: 225px;
+				background: #1E90FF;
+				border-radius: 15px;
+				border-width: 5px;
+				margin: 5.76562px;
+				display: table-cell;
+			}
+			.game-name {
+				font-family: 'Arial';
+				margin-top: auto;
+				text-align: center;
+			}
+			.game-name-align {
+				vertical-align: middle;
+				text-align: center;
+				top: 0px;
+				left: 0px;
+				height: 40px;
+			}
+			.game-icon {
+				width: 125px;
+				height: 125px;
+				border-radius: 15px;
+				vertical-align: bottom;
+				margin-top: 15px;
+			}
+			.bottombar {
+				background: #1E90FF;
+				width: 100%;
+				height: 75px;
+				border-top: 5px solid black;
+				position: absolute;
+				left: 0px;
+				margin-top: 25px;
+				font-family: 'Arial';
+			}
+		</style>
+	</head>
+	
+	<body style="background-color: #4682B4;">
+		<div class="topbar">
+			<button class="title" onclick="location.href='https://yaboi-v3rt3x.github.io/SchoolFlashCards-Revamped'">
+				<img src="icons/logo.png" alt="Logo" width="64" height="64">
+				<h style="vertical-align:18.75px;">School Flash Cards</h>
+			</button>
+			<div class="socials">
+				<h class="socials-text">Our Socials: </h>
+				<button class="social-button" style="background: linear-gradient(145deg, #7289DA, #4B5EAB);" onclick="window.open('https://discord.gg/GnVUkcsfMw')">
+					<img class="social-icon" src="icons/social/discord-icon.png"></img>
+					<span style="padding-top: 7.5px;"> Discord Server</span>
+				</button>
+				<button class="social-button" style="background: linear-gradient(145deg, #ff6e6e, #ff3d3d);" onclick="window.open('https://www.youtube.com/@SFC3GH')">
+					<img class="social-icon" src="icons/social/youtube-icon.png"></img>
+					<span style="padding-top: 7.5px;"> YouTube Channel</span>
+				</button>
+				<button class="social-button" style="background: linear-gradient(145deg, #AFAFAF, #3B3B3B);" onclick="window.open('https://www.tiktok.com/@schoolflashcards3_gh')">
+					<img class="social-icon" src="icons/social/tiktok-icon.png"></img>
+					<span style="padding-top: 7.5px;"> TikTok Account</span>
+				</button>
+			</div>
+		</div>
+
+		<div id="game-list" style="display: table; width: 100%; height: auto;">
+			<button class="game-box" onclick="location.href='study-hall/solar-system-facts'">
+				<div class="game-name-align">
+					<h2 class="game-name">Solar System Facts!</h2>
+				</div>
+				<img class="game-icon" src="icons/study-hall/solar-system-facts.png"></img>
+			</button>
+			
+			<div class="bottombar">
+				<h1 style="text-align: center;">jaysoninthesubway & EKFun are affiliates of School Flash Cards™</h1>
+			</div>
+		</div>
+	</body>
+</html>
