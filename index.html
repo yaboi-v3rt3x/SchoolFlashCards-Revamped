@@ -64,7 +64,7 @@
 				font-size: 50px;
 				text-align: center;
 				margin-top: 115px;
-               			width: 99.5%;
+               	width: 99.5%;
 				height: 60px;
 				background: #1E90FF;
 				border-radius: 15px;
@@ -75,12 +75,12 @@
 				margin: 5px;
 				font-family: 'Arial';
 				font-weight: bold;
-				display: flex;
+				display: table;
 				margin-top: 25px;
 			}
 			.about {
-				width: 48%;
-				height: 500px;
+				width: 35%;
+				height: 577px;
 				background: #1E90FF;
 				border-radius: 15px;
 				border: 5px solid black;
@@ -89,8 +89,8 @@
 				text-align: center;
 			}
 			.updates {
-				width: 48%;
-				height: 500px;
+				width: 35%;
+				height: 577px;
 				background: #1E90FF;
 				border-radius: 15px;
 				border: 5px solid black;
@@ -119,9 +119,11 @@
 			}
 			.update {
 				width: 65%;
+				margin-left: 25px;
+				text-align: left;
 			}
-			.play-now-button {
-				width: 99.5%;
+			.button {
+				width: 25%;
 				height: 60px;
 				background: #1E90FF;
 				border-radius: 15px;
@@ -129,8 +131,8 @@
 				font-weight: bold;
 				font-size: 35px;
 				position: absolute;
-  				top: 85%;
   				left: 50%;
+				top: 50%;
   				-ms-transform: translate(-50%, -50%);
   				transform: translate(-50%, -50%);
 			}
@@ -141,7 +143,7 @@
 				border-top: 5px solid black;
 				position: absolute;
 				left: 0px;
-				margin-top: 112px;
+				margin-top: 35px;
 				font-family: 'Arial';
 			}
 		 </style>
@@ -173,31 +175,36 @@
 		<h1 class="header">Welcome to School Flash Cards!</h1>
 
 		<div class="content">
-			<div class="about">
-				<h1 style="font-size: 50px; text-align: center;">About School Flash Cards</h1>
-				<div class="thick-line"></div>
-				<h1>
-					School Flash Cards is a unblocked games website for playing games at school. 
-					It offers a variety of unblocked games for everyone to enjoy during they're time at school.
-				</h1>
-			</div>
-	
-			<div class="updates">
-				<h1 style="font-size: 50px; text-align: center;">Site Updates</h1>
-				<div class="thick-line">
-					<div class="list-entry">
-						<h1 class="update-date">[03/07/2025]</h1>
-						<h1 class="update">Added Crossy Road & Basketball Legends</h1>
-					</div>
-					<div class="list-entry">
-						<h1 class="update-date">[03/06/2025]</h1>
-						<h1 class="update">Created Home Page</h1>
+			<div style="display: flex;">
+				<div class="about">
+					<h1 style="font-size: 50px; text-align: center;">About School Flash Cards</h1>
+					<div class="thick-line"></div>
+					<h1>
+						School Flash Cards is a unblocked games website for playing games at school. 
+						It offers a variety of unblocked games for everyone to enjoy during they're time at school.
+					</h1>
+				</div>
+				
+				<div>
+					<button class="button" onclick="location.href='games'">Play Now!</button>
+					<button class="button" onclick="location.href='study-hall'" style="margin-top: 100px;">Study</button>
+				</div>
+
+				<div class="updates">
+					<h1 style="font-size: 50px; text-align: center;">Site Updates</h1>
+					<div class="thick-line">
+						<div class="list-entry">
+							<h1 class="update-date">[03/07/2025]</h1>
+							<h1 class="update">Added Crossy Road & Basketball Legends</h1>
+						</div>
+						<div class="list-entry">
+							<h1 class="update-date">[03/06/2025]</h1>
+							<h1 class="update">Created Home Page</h1>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<button class="play-now-button" onclick="location.href='games'">Play Now!</button>
 
 		<div class="bottombar">
 			<h1 style="text-align: center;">jaysoninthesubway & EKFun are affiliates of School Flash Cards™</h1>
